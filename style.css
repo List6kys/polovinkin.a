@@ -1,0 +1,120 @@
+body {
+    font-family: sans-serif;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.link-header {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: #e0e0e0;
+  transition: all 0.2s ease;
+}
+
+.link-header:hover {
+  background: #d0d0d0;
+  transform: translateY(-2px);
+}
+
+main {
+  padding: 100px 30px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  color: #444;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: #0066cc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+ul li {
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+ul li:nth-child(1) { animation-delay: 0.1s; }
+ul li:nth-child(2) { animation-delay: 0.2s; }
+ul li:nth-child(3) { animation-delay: 0.3s; }
+
+ul li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+img {
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+img:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  margin-top: 40px;
+}
+
+.social img {
+  width: 60px;
+  height: 60px;
+  transition: all 0.2s ease;
+}
+.social img:hover {
+  transform: scale(1.05);
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+media (max-width: 768px) {
+  h1 { font-size: 2em; }
+  main { padding: 80px 20px 30px; }
+  img { width: 100%; height: auto; }
+}
